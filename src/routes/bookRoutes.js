@@ -33,4 +33,4 @@ var router = function (nav) {
     
     return bookRouter;
 };
-module.exports = bookRouter;
+module.exports = router;
