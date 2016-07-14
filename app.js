@@ -12,13 +12,13 @@ app.set('view engine', 'ejs');
 
 var books = [
     {
-        title: 'You are gay',
-        genre: 'gay nonfiction',
+        title: 'You are beautiful',
+        genre: 'beautiful nonfiction',
         author: 'Ryan Magoon',
         read: false
     },
     {
-        title: 'Big Booty Bitches',
+        title: 'Miracle on 34th street',
         genre: 'nonfiction',
         author: 'Ryan Magoon',
         read: true
@@ -35,7 +35,9 @@ bookRouter.route('/')
               {
                   Link: '/Authors',
                   Text: 'Authors'
-              }]});
+              }],
+        books: books
+    });
     });
 
 bookRouter.route('/single')
